@@ -96,7 +96,7 @@ html {
   margin: 35px;
 }
 .menu {
-  padding: 100px;
+  width: auto;
   background-color: rgb(255, 183, 0);
   color: black;
   display: flex;
@@ -112,7 +112,7 @@ html {
   text-align: center;
   box-shadow: 0px 3px 10px 2px black;
   transition: 0.6s;
-  margin: 15px;
+  margin: 30px;
   flex-wrap: wrap;
 }
 .menu div img {
@@ -184,7 +184,7 @@ html {
 ======================= */
 
 /* Mobile */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
 
   #menubtn{
     display: block;
@@ -201,20 +201,6 @@ html {
     font-size: 30px;
   }
 
-  .menu {
-    padding: 30px 15px;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .menu div {
-    width: 90%;
-  }
-
-  .menu div img {
-    width: 100%;
-    height: auto;
-  }
 
   .more-info {
     padding: 20px;
