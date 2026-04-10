@@ -26,6 +26,6 @@ function menuoff(){
     menu2.style.display = 'none'
 }
 
-function alert(){
-  alert("YOU ORDERED")
+function msg(){
+  alert("YOU ORDERED");
 }
