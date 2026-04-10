@@ -4,6 +4,10 @@
   font-family: "poppins", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .topbar {
   background-color: black;
   display: flex;
@@ -11,7 +15,7 @@
   justify-content: space-between;
 }
 
-.topbar nav {
+.topbar a {
   cursor: pointer;
   position: relative;
   width: max-content;
@@ -20,14 +24,15 @@
   transition: 0.6s;
   margin: 50px;
   color: rgb(255, 183, 0);
+  text-decoration: none;
 }
 
-.topbar nav::selection {
+.topbar a::selection {
   background-color: rgb(22, 22, 22);
   color: rgb(206, 148, 0);
 }
 
-.topbar nav::after {
+.topbar a::after {
   content: " ";
   position: absolute;
   width: 100%;
@@ -39,11 +44,11 @@
   transition: 0.6s;
 }
 
-.topbar nav:hover::after {
+.topbar a:hover::after {
   height: 100%;
 }
 
-.topbar nav:hover {
+.topbar a:hover {
   color: black;
 }
 
@@ -150,3 +155,72 @@
   background-color: black;
   color: white;
 }
+
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 23;
+  background-color: black;
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.sidebar span{
+  margin: 30px;
+  font-size:30px
+}
+
+#menubtn{
+  display: none;
+}
+
+/* =======================
+   RESPONSIVE DESIGN
+======================= */
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  #menubtn{
+    display: block;
+  }
+  .things{
+    display: none;
+  }
+
+  .shopDetails {
+    padding: 40px 20px;
+  }
+
+  .shopDetails h1 {
+    font-size: 30px;
+  }
+
+  .menu {
+    padding: 30px 15px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu div {
+    width: 90%;
+  }
+
+  .menu div img {
+    width: 100%;
+    height: auto;
+  }
+
+  .more-info {
+    padding: 20px;
+    text-align: center;
+  }
+
+}
+
+
