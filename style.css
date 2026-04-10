@@ -13,6 +13,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: auto;
 }
 
 .topbar a {
@@ -61,7 +62,6 @@ html {
 .shopDetails {
   display: flex;
   flex-direction: column;
-  padding: 100px;
   background-image: url("assets/AI\ generated\ Buffet\ table\ scene\ of\ take\ out\ or\ delivery\ foods_\ Pizza\,\ hamburgers\,\ fried\ chicken\ and\ sides.\ Above\ view\ on\ a\ dark\ wood\ background"); /* rename file properly */
   background-repeat: no-repeat;
   background-size: cover;
@@ -70,6 +70,7 @@ html {
   text-align: center;
   position: relative;
   z-index: 0;
+  width: auto;
 }
 
 /* Dark overlay */
@@ -108,12 +109,11 @@ html {
 .menu div {
   padding: 30px;
   width: 300px;
-  height: fit-content;
+  height: max-content;
   text-align: center;
   box-shadow: 0px 3px 10px 2px black;
   transition: 0.6s;
-  margin: 30px;
-  flex-wrap: wrap;
+  margin: 15px;
 }
 .menu div img {
   height: 200px;
@@ -184,7 +184,7 @@ html {
 ======================= */
 
 /* Mobile */
-@media (max-width: 600px) {
+@media (max-width: 745px) {
 
   #menubtn{
     display: block;
@@ -200,7 +200,6 @@ html {
   .shopDetails h1 {
     font-size: 30px;
   }
-
 
   .more-info {
     padding: 20px;
