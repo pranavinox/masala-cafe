@@ -98,6 +98,7 @@ html {
 }
 .menu {
   width: auto;
+  height: max-content;
   background-color: rgb(255, 183, 0);
   color: black;
   display: flex;
@@ -116,7 +117,7 @@ html {
   margin: 15px;
 }
 .menu div img {
-  height: 200px;
+  width:200px;
 }
 
 .menu div nav {
@@ -156,7 +157,7 @@ html {
   color: white;
 }
 
-.sidebar{
+.sidebar {
   position: fixed;
   top: 0;
   right: 0;
@@ -170,12 +171,12 @@ html {
   align-items: flex-start;
 }
 
-.sidebar span{
+.sidebar span {
   margin: 30px;
-  font-size:30px
+  font-size: 30px;
 }
 
-#menubtn{
+#menubtn {
   display: none;
 }
 
@@ -185,11 +186,10 @@ html {
 
 /* Mobile */
 @media (max-width: 745px) {
-
-  #menubtn{
+  #menubtn {
     display: block;
   }
-  .things{
+  .things {
     display: none;
   }
 
@@ -205,7 +205,4 @@ html {
     padding: 20px;
     text-align: center;
   }
-
 }
-
-
